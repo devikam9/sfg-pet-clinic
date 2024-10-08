@@ -1,7 +1,6 @@
 package guru.springframework.sfgpetclinic.services.map;
 
 
-import guru.springframework.sfgpetclinic.model.Owner;
 import guru.springframework.sfgpetclinic.model.Speciality;
 import guru.springframework.sfgpetclinic.model.Vet;
 
@@ -11,11 +10,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.Set;
 @Service
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
+public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
 
     private SpecialitiesService specialitiesService;
 
-    public VetServiceMap(SpecialitiesService specialitiesService) {
+    public VetMapService(SpecialitiesService specialitiesService) {
         this.specialitiesService = specialitiesService;
     }
 
