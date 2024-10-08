@@ -19,10 +19,10 @@ public class VetSDJpaService implements VetService {
         this.vetRepository = vetRepository;
     }
 
-//    @Override
-//    public Vet findByLastName(String lastName) {
-//        return null;
-//    }
+    @Override
+    public Vet findByLastName(String lastName) {
+        return null;
+    }
 
     @Override
     public Set<Vet> findAll() {

@@ -22,9 +22,9 @@ public class VisitSDJpaService implements VisitService {
     @Override
     public Set<Visit> findAll() {
 
-        Set<Visit> visit = new HashSet<>();
-        visitRepository.findAll().forEach(visit::add);
-        return visit;
+        Set<Visit> visits = new HashSet<>();
+        visitRepository.findAll().forEach(visits::add);
+        return visits;
     }
 
     @Override
