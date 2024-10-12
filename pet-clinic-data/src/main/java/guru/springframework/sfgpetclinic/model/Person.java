@@ -2,10 +2,7 @@ package guru.springframework.sfgpetclinic.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
@@ -14,6 +11,7 @@ import lombok.Setter;
 @MappedSuperclass
 public class Person extends BaseEntity {
 
+//    @Builder
     public Person(Long id, String firstName, String lastName) {
         super(id);
         this.firstName = firstName;
